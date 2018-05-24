@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "866150215259",
+    "firebase_url": "https://snaps-d9c0c.firebaseio.com",
+    "project_id": "snaps-d9c0c",
+    "storage_bucket": "snaps-d9c0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866150215259:android:a5d817bf39915015",
+        "android_client_info": {
+          "package_name": "com.example.hansaanuradhawickramanayake.snaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866150215259-v6gmrh9jbqmk4hgg2kpnbr2gqle0uq55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hansaanuradhawickramanayake.snaps",
+            "certificate_hash": "faa6ad573edaf218abb03b108c249d92f55648ee"
+          }
+        },
+        {
+          "client_id": "866150215259-bsbr3vbbjiloqu663ibaouu6djqnjb7s.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "866150215259-bsbr3vbbjiloqu663ibaouu6djqnjb7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDphs8wpjauRFIRvfzvi1UbmSN6P1EKRuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866150215259-bsbr3vbbjiloqu663ibaouu6djqnjb7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
