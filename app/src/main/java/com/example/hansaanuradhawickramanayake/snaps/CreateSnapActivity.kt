@@ -75,7 +75,13 @@ class CreateSnapActivity : AppCompatActivity() {
             val downloadUrl = taskSnapshot.downloadUrl
             Log.i("Url", downloadUrl.toString())
 
-            // ...
+            val intent = Intent(this, ChooseUserActivity::class.java)
+            intent.putExtra("imageURL", downloadUrl.toString())
+            intent.putExtra("imageName", imageName)
+            intent.putExtra("message", messageEditText.text.toString())
+            startActivity(intent)
+
+
         })
     }
 

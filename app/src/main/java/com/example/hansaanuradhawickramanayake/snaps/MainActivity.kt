@@ -16,14 +16,23 @@ import android.R.attr.password
 import android.support.v4.app.FragmentActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.R.attr.password
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.DatabaseReference
+
+
+
+
 
 
 
 
 class MainActivity : AppCompatActivity() {
 
-
+    // Firebase
     private var mAuth: FirebaseAuth? = null
+    var database = FirebaseDatabase.getInstance()
+    var myRef = database.getReference()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,6 +78,10 @@ class MainActivity : AppCompatActivity() {
                             Log.d("result", "createUserWithEmail:success")
                             Toast.makeText(this@MainActivity, "Signed Up Successfully", Toast.LENGTH_SHORT).show()
                             moveToSnapsActivity()
+
+                            // Add Users to Database
+                            var userDatabaseReference = myRef.child("users").child(task.result.user.uid).child("email").setValue(emailEditText.text.toString())
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("result", "createUserWithEmail:failure", task.exception)
