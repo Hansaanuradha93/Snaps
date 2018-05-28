@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance()
     }
 
     fun signIn(view: View){
